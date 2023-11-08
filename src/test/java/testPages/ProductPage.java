@@ -11,6 +11,9 @@ public class ProductPage extends BasePage{
     private static String ProductBaseID = "add-to-cart-sauce-labs-";
     private static String RemoveProductBaseID = "remove-sauce-labs-";
 
+    @FindBy(xpath = "//span[@class='title']")
+    WebElement pageTitle;
+
     @FindBy(css = "[class='shopping_cart_badge']")
     WebElement shoppingCartContainer;
 
@@ -30,7 +33,7 @@ public class ProductPage extends BasePage{
         return Integer.parseInt(shoppingCartContainer.getText());
     }
     @Override
-    public boolean isAt() {
-        return false;
+    public boolean isAt()  {
+        return pageTitle.isDisplayed();
     }
 }
