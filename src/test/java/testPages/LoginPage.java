@@ -23,11 +23,11 @@ public class LoginPage extends BasePage{
     public boolean isAt(){ return loginButton.isDisplayed();}
 
     public static ProductPage login(String userName, String password){
-        userNameInput.submit();
+        userNameInput.click();
         userNameInput.clear();
         userNameInput.sendKeys(userName);
 
-        userPasswordInput.submit();
+        userPasswordInput.click();
         userPasswordInput.clear();
         userPasswordInput.sendKeys(password);
 

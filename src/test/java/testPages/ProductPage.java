@@ -25,13 +25,12 @@ public class ProductPage extends BasePage{
         WebElement itemToBeAdded = driver.findElement(By.id(ProductBaseID + itemName));
         itemToBeAdded.click();
     }
-    public void removeProductFromTheCart(String itemName){
-        WebElement itemToBeRemoved = driver.findElement(By.id(By.id(RemoveProductBaseID) + itemName));
-    }
 
     public int getItemsInTheCart(){
         return Integer.parseInt(shoppingCartContainer.getText());
     }
+
+
     @Override
     public boolean isAt()  {
         return pageTitle.isDisplayed();

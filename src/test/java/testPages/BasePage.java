@@ -1,8 +1,9 @@
 package testPages;
 
+import base.TestUtil;
 import org.openqa.selenium.WebDriver;
 
-public abstract class  BasePage {
+public abstract class  BasePage extends TestUtil {
     protected static WebDriver driver;
 
     public BasePage(WebDriver driver){

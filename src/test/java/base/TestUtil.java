@@ -58,5 +58,5 @@ public class TestUtil extends DataProvider {
     }
 
     @AfterMethod
-    public void tearDown(){driver.quit();}
+public void tearDown(){driver.quit();}
 }

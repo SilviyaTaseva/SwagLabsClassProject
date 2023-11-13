@@ -17,7 +17,8 @@ public class ProductAdding extends TestUtil {
         productPage.addItemToTheCart("backpack");
         productPage.addItemToTheCart("fleece-jacket");
 
-        Assert.assertEquals(productPage.getItemsInTheCart(), 3);
+        Assert.assertEquals(productPage.getItemsInTheCart(),3);
+
     }
 
 }

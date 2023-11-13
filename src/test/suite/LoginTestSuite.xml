@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Login Tests" thread-count="2" parallel="tests" annotations="JDK"  verbose="1">
-    <test name="SuccessfulLogin">
+    <test name="Successful Login">
         <classes>
             <class name="sauceTest.suite.SuccessfulLogin">
             </class>
